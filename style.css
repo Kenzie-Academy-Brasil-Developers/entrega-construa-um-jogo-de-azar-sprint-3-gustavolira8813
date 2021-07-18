@@ -13,13 +13,14 @@ img{
     border-radius: 50%;
     width: 100%;
     height: 100%;
-   
+    
 }
 figure{
     
     height: 100px;
     width: 100px;
-    flex: 0 0 70px;
+    flex: 0 0 23%;
+    
     
 }
 #escolha{
@@ -28,10 +29,12 @@ figure{
 
 img:hover{
     opacity: 0.7;
-    
     background-color: red;
+           
 }
-
+img:focus{
+    background: yellow;
+}
 
 
 
@@ -45,4 +48,14 @@ img:hover{
     text-align: center;
     background: rgb(30, 178, 223);
     border-radius: 10px;
+}
+
+@media (min-width:700px) {
+    figure{
+        flex: 0 0 135px
+    }
+    #figCom{
+        height: 200px;
+        width: 200px;
+    }
 }
